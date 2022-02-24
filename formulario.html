@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIO DE PERFILAMIENTO PARA CARRERAS TECH<br></H1>
+
+    <p>Bienvenida al formulario de perfilamiento de <strong>Skills for Women in Tech</strong>.</p>
+    <p>Por favor, proporciona la información solicitada para hacer tu perfilamiento inicial. Esto te ayudará en la selección de carrera.<br></p>
+
+    <h2>SECCIÓN A. DATOS PERSONALES</h2>
+    <p>Por favor, indica la información personal solicitada a continuación.<br></p>
+
+    <form>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname" size="30" required><br><br>
+        <label for="lname">Apellido:</label><br>
+        <input type="text" id="lname" name="lname" size="30" required><br><br>
+        <label for="fnac">Fecha de nacimiento:</label><br>
+        <input type="date" id="fnac" name="fnac" required><br><br>
+        <label for="prof">Profesión/Ocupación:</label><br>
+        <input type="text" id="prof" name="prof" required><br><br>
+        <label for="ciudad">Ciudad de residencia:</label><br>
+        <input type="text" id="ciudad" name="ciudad" required><br><br>
+        <label for="estado">Estado de residencia:</label><br>
+        <input list="estados" name="estados" required><br><br>
+        <datalist id="estados">
+            <option value="Aguascalientes"></option>
+            <option value="Baja California"></option>
+            <option value="Baja California Sur"></option>
+            <option value="Campeche"></option>
+            <option value="Chiapas"></option>
+            <option value="Chihuahua"></option>
+            <option value="Ciudad de México"></option>
+            <option value="Coahuila"></option>
+            <option value="Colima"></option>
+            <option value="Durango"></option>
+            <option value="Guanajuato"></option>
+            <option value="Guerrero"></option>
+            <option value="Hidalgo"></option>
+            <option value="Jalisco"></option>
+            <option value="Estado de México"></option>
+            <option value="Michoacán"></option>
+            <option value="Morelos"></option>
+            <option value="Nayarit"></option>
+            <option value="Nuevo León"></option>
+            <option value="Oaxaca"></option>
+            <option value="Puebla"></option>
+            <option value="Querétaro"></option>
+            <option value="Quintana Roo"></option>
+            <option value="San Luis Potosí"></option>
+            <option value="Sinaloa"></option>
+            <option value="Sonora"></option>
+            <option value="Tabasco"></option>
+            <option value="Tamaulipas"></option>
+            <option value="Tlaxcala"></option>
+            <option value="Veracruz"></option>
+            <option value="Yucatán"></option>
+            <option value="Zacatecas"></option>
+            <option value="Extranjero"></option>
+        </datalist>
+        <label for="tel">Teléfono:</label><br>
+        <input type="tel" id="tel" name="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+    </form>
+
+    <h2>SECCIÓN B. ÁREA DE INTERÉS DEL BOOTCAMP</h2>
+    <p>Indica el área de especialidad del bootcamp en que estás interesada.</p>
+
+    <form>
+        <input type="radio" id="Backend" name="area_esp" value="Backend">
+        <label for="Backend">Backend</label><br>
+        <input type="radio" id="Frontend" name="area_esp" value="Frontend">
+        <label for="Frontend">Frontend</laber><br>
+        <input type="radio" id="Mobil" name="area_esp" value="Móbil">
+        <label for="Mobil">Móbil</label><br><br>
+    </form>
+
+    <h2>SECCIÓN C. LENGUAJE DE PROGRAMACIÓN</h2>
+    <p>Selecciona los lenguajes de programación de mayor interés. Elige máximo tres.</p>
+    
+    <form>
+        <input type="checkbox" id="lenprog1" name="lengprog1" value="Python">
+        <label for="lengprog1">Python</label><br>
+        
+        <input type="checkbox" id="lengprog2" name="lengprog2" value="JavaScript">
+        <label for="lengprog2">JavaScript</label><br>
+        
+        <input type="checkbox" id="lengprog3" name="lengprog3" value="Java">
+        <label for="lengprog3">Java</label><br>
+        
+        <input type="checkbox" id="lengprog4" name="lengprog4" value="C/C++">
+        <label for="lengprog4">C/C++</label><br>
+
+        <input type="checkbox" id="lengprog5" name="lengprog5" value="R">
+        <label for="lengprog5">R</label><br>
+
+        <input type="checkbox" id="lengprog6" name="lengprog6" value="Ruby">
+        <label for="lengprog6">Ruby</label><br>
+
+        <input type="checkbox" id="lengprog7" name="lengprog7" value="HTML">
+        <label for="lengprog7">HTML</label><br>
+
+        <input type="checkbox" id="lengprog8" name="lengprog8" value="Kotlyn">
+        <label for="lengprog8">Kotlyn</label><br>
+
+        <input type="checkbox" id="lenprog9" name="lengprog9" value="Go">
+        <label for="lengprog9">Go</label><br><br>
+    </form>
+
+    <h2>SECCIÓN D. CARRERA DE ESPECIALIZACIÓN</h2>
+    <p>Indica en cuál de las siguientes carreras te gustaría especializarte en el futuro.<br></p>
+
+    <form>
+        <input type="radio" id="IoT" name="carrera" value="Internet of Things">
+        <label for="IoT">Internet of Things</label><br>
+
+        <input type="radio" id="IngDat" name="carrera" value="Ingeniería de datos">
+        <label for="IngDat">Ingeniería de Datos</label><br>
+
+        <input type="radio" id="CiDat" name="carrera" value="Ciencia de Datos">
+        <label for="CiDat">Ciencia de Datos</label><br>
+
+        <input type="radio" id="AIML" name="carrera" value="AI-ML">
+        <label for="AIML">AI-ML</label><br>
+
+        <input type="radio" id="Juegos" name="carrera" value="Juegos">
+        <label for id="Juegos">Juegos</label><br>
+
+        <input type="radio" id="CybSeg" name="carrera" value="Cyberseguridad">
+        <label for id="CybSeg">Cyberseguridad</label><br>
+
+        <input type="radio" id="Redes" name="carrera" value="Redes">
+        <label for id="Redes">Redes</label><br>
+
+        <input type="radio" id="Testing" name="carrera" value="Testing">
+        <label for id="Testing">Testing</label><br>
+
+        <input type="radio" id="Otra" name="carrera" value="Otra">
+        <label id="Otra">Otra:</label>
+        <input type="text" id="Otra" name="Otra"><br><br><br>
+    </form>
+
+    <button type="button" onclick="alert('La información ha sido registrada. ¡Gracias por llenar el formulario!')">Enviar</button><br>
+
+</body>
+</html>
